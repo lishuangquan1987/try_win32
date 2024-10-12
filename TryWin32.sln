@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "创建无焦点窗体", "创建无焦点窗体\创建无焦点窗体.csproj", "{3668F1E4-79A0-4479-9E37-F7C033E6B4BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{6B356083-31E9-4167-9A4B-27D678D45D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "获取窗体", "获取窗体\获取窗体.csproj", "{C9661BAD-1EFC-4604-AB6A-E7EA8A007306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "圆形窗体", "圆形窗体\圆形窗体.csproj", "{2FE5ABC0-D256-4EA7-98A7-33CA0155C817}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3668F1E4-79A0-4479-9E37-F7C033E6B4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3668F1E4-79A0-4479-9E37-F7C033E6B4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3668F1E4-79A0-4479-9E37-F7C033E6B4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3668F1E4-79A0-4479-9E37-F7C033E6B4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B356083-31E9-4167-9A4B-27D678D45D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B356083-31E9-4167-9A4B-27D678D45D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B356083-31E9-4167-9A4B-27D678D45D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B356083-31E9-4167-9A4B-27D678D45D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9661BAD-1EFC-4604-AB6A-E7EA8A007306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9661BAD-1EFC-4604-AB6A-E7EA8A007306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9661BAD-1EFC-4604-AB6A-E7EA8A007306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9661BAD-1EFC-4604-AB6A-E7EA8A007306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE5ABC0-D256-4EA7-98A7-33CA0155C817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE5ABC0-D256-4EA7-98A7-33CA0155C817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE5ABC0-D256-4EA7-98A7-33CA0155C817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE5ABC0-D256-4EA7-98A7-33CA0155C817}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {835E4E8C-276E-4349-A545-514FF2461FB7}
+	EndGlobalSection
+EndGlobal
