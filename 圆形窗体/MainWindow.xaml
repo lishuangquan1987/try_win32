@@ -89,48 +89,50 @@
 
         <SolidColorBrush x:Key="FlashColor">LightBlue</SolidColorBrush>
     </Window.Resources>
-    <Grid Background="Transparent" PreviewMouseDown="Button_MouseDown">
-        <Grid>
+    <Grid Background="Transparent" PreviewMouseDown="Grid_MouseDown">
+        <Grid Visibility="Visible">
             <Grid.Triggers>
                 <EventTrigger RoutedEvent="Loaded">
                     <BeginStoryboard>
-                        <Storyboard RepeatBehavior="Forever" Duration="0:0:1">
+                        <Storyboard
+                            AutoReverse="True"
+                            FillBehavior="HoldEnd"
+                            RepeatBehavior="Forever"
+                            Duration="0:0:0.5">
                             <Storyboard>
                                 <DoubleAnimation
-                                    Storyboard.TargetName="ellipse1"
+                                    Storyboard.TargetName="ellipse1_0"
                                     Storyboard.TargetProperty="Height"
-                                    From="0"
+                                    From="60"
                                     To="100" />
                                 <DoubleAnimation
-                                    Storyboard.TargetName="ellipse1"
+                                    Storyboard.TargetName="ellipse1_0"
                                     Storyboard.TargetProperty="Width"
-                                    From="0"
+                                    From="60"
                                     To="100" />
                             </Storyboard>
-
                             <Storyboard>
                                 <DoubleAnimation
-                                    Storyboard.TargetName="ellipse0_5"
+                                    Storyboard.TargetName="ellipse0_8"
                                     Storyboard.TargetProperty="Height"
-                                    From="50"
+                                    From="80"
                                     To="100" />
                                 <DoubleAnimation
-                                    Storyboard.TargetName="ellipse0_5"
+                                    Storyboard.TargetName="ellipse0_8"
                                     Storyboard.TargetProperty="Width"
-                                    From="50"
+                                    From="80"
                                     To="100" />
                             </Storyboard>
-
                             <Storyboard>
                                 <DoubleAnimation
-                                    Storyboard.TargetName="ellipse0_3"
+                                    Storyboard.TargetName="ellipse0_4"
                                     Storyboard.TargetProperty="Height"
-                                    From="30"
+                                    From="40"
                                     To="100" />
                                 <DoubleAnimation
-                                    Storyboard.TargetName="ellipse0_3"
+                                    Storyboard.TargetName="ellipse0_4"
                                     Storyboard.TargetProperty="Width"
-                                    From="30"
+                                    From="40"
                                     To="100" />
                             </Storyboard>
                         </Storyboard>
@@ -138,84 +140,17 @@
                 </EventTrigger>
             </Grid.Triggers>
             <Ellipse
-                Name="ellipse1"
+                Name="ellipse1_0"
                 Fill="{StaticResource FlashColor}"
-                Opacity="1">
-                <!--<Ellipse.Triggers>
-                    <EventTrigger RoutedEvent="Loaded">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    RepeatBehavior="Forever"
-                                    Storyboard.TargetProperty="Height"
-                                    From="0"
-                                    To="100"
-                                    Duration="0:0:1" />
-                                <DoubleAnimation
-                                    RepeatBehavior="Forever"
-                                    Storyboard.TargetProperty="Width"
-                                    From="0"
-                                    To="100"
-                                    Duration="0:0:1" />
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </Ellipse.Triggers>-->
-            </Ellipse>
+                Opacity="1" />
             <Ellipse
-                Name="ellipse0_5"
+                Name="ellipse0_8"
                 Fill="{StaticResource FlashColor}"
-                Opacity="0.5">
-                <!--<Ellipse.Triggers>
-                    <EventTrigger RoutedEvent="Loaded">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    BeginTime="0:0:0.5"
-                                    RepeatBehavior="Forever"
-                                    Storyboard.TargetProperty="Height"
-                                    From="50"
-                                    To="100"
-                                    Duration="0:0:0.5" />
-                                <DoubleAnimation
-                                    BeginTime="0:0:0.5"
-                                    RepeatBehavior="Forever"
-                                    Storyboard.TargetProperty="Width"
-                                    From="50"
-                                    To="100"
-                                    Duration="0:0:0.5" />
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </Ellipse.Triggers>-->
-            </Ellipse>
+                Opacity="0.8" />
             <Ellipse
-                Name="ellipse0_3"
+                Name="ellipse0_4"
                 Fill="{StaticResource FlashColor}"
-                Opacity="0.3">
-                <!--<Ellipse.Triggers>
-                    <EventTrigger RoutedEvent="Loaded">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    BeginTime="0:0:0.3"
-                                    RepeatBehavior="Forever"
-                                    Storyboard.TargetProperty="Height"
-                                    From="30"
-                                    To="100"
-                                    Duration="0:0:0.7" />
-                                <DoubleAnimation
-                                    BeginTime="0:0:0.3"
-                                    RepeatBehavior="Forever"
-                                    Storyboard.TargetProperty="Width"
-                                    From="30"
-                                    To="100"
-                                    Duration="0:0:0.7" />
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </Ellipse.Triggers>-->
-            </Ellipse>
+                Opacity="0.4" />
         </Grid>
         <Button
             Width="100"

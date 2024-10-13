@@ -43,7 +43,7 @@ namespace 圆形窗体
             User32Helper.SetWindowLong(helper.Handle, GWL_EXSTYLE, new IntPtr(style));
         }
 
-        private void Button_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton ==  MouseButton.Left)
             {
